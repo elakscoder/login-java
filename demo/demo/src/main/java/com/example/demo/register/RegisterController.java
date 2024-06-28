@@ -13,8 +13,6 @@ public class RegisterController {
 
     private RegisterService registerService;
     public String register(@RequestBody RegisterRequest request){
-        return RegisterService.register(request);
+        return registerService.register(request);
     }
-
-
 }
